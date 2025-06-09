@@ -1,0 +1,129 @@
+/* Base styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+header, footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+.logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:focus, nav a:hover {
+  outline: 2px solid #fff;
+}
+
+.hero {
+  background: #eee;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.hero button {
+  padding: 0.5em 1em;
+  background: #444;
+  color: #fff;
+  border: none;
+}
+
+.hero button:focus {
+  outline: 2px solid #000;
+}
+
+section {
+  padding: 1.5em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.services-grid img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background: #222;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+}
+
+button[type="submit"]:focus {
+  outline: 2px solid #000;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.social-media span {
+  margin: 0 0.5em;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
